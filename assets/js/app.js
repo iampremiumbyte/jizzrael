@@ -7,7 +7,7 @@ const bgAudio = document.querySelector("#bg-audio")
 
 const styleBoxes = () => {
 
-    Array(6).fill(0).forEach((_, i) => {
+    Array(3).fill(0).forEach((_, i) => {
         const box = document.getElementById(`box${i + 1}`);
 
         const area = document.getElementById(`area${i + 1}`);
@@ -29,6 +29,5 @@ startButton.addEventListener("click", () => {
     video.addEventListener("ended", () => {
         overlay.style.display = "none";
         styleBoxes();
-        bgAudio.play();
     })
 });
